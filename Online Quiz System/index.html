@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Quiz Challenge - Login</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f0f2f5; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .container { background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        .form-container { display: none; }
+        .form-container.active { display: block; }
+        h1 { color: #007bff; text-align: center; margin-bottom: 1.5rem; }
+        input[type="text"], input[type="password"] { width: 95%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
+        button { display: block; width: 100%; padding: 1rem; border: none; border-radius: 10px; background-color: #007bff; color: white; font-size: 1rem; cursor: pointer; transition: background-color 0.2s ease; }
+        button:hover { background-color: #0056b3; }
+        .toggle-link { text-align: center; margin-top: 1rem; color: #007bff; cursor: pointer; text-decoration: underline; }
+        
+        /* --- NEW STYLE FOR LEADERBOARD LINK --- */
+        .leaderboard-link { 
+            display: block; 
+            text-align: center; 
+            margin-top: 1.5rem; 
+            color: #6c757d; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        .leaderboard-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div id="login-form" class="form-container active">
+            <h1>Login</h1>
+            <!-- This form submits to your new auth.cgi program -->
+            <form action="/cgi-bin/auth.cgi" method="POST">
+                <input type="hidden" name="action" value="login">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p class="toggle-link" onclick="toggleForms()">Need an account? Register here.</p>
+        </div>
+
+        <!-- Register Form -->
+        <div id="register-form" class="form-container">
+            <h1>Register</h1>
+            <form action="/cgi-bin/auth.cgi" method="POST">
+                <input type="hidden" name="action" value="register">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p class="toggle-link" onclick="toggleForms()">Already have an account? Login here.</p>
+        </div>
+        
+        <!-- *** NEW LEADERBOARD LINK *** -->
+        <a href="/cgi-bin/leaderboard.cgi" class="leaderboard-link">View Leaderboard</a>
+
+    </div>
+
+    <script>
+        function toggleForms() {
+            document.getElementById('login-form').classList.toggle('active');
+            document.getElementById('register-form').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
