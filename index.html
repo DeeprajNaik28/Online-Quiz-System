@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Master</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <div id="startScreen" class="screen active">
+    <h1>QUIZ MASTER</h1>
+    <p>Can you beat all 10 levels?</p>
+
+    <button id="startBtn">Start Game</button>
+  </div>
+
+
+  <!-- QUIZ SCREEN -->
+  <div id="quizScreen" class="screen">
+
+    <div class="topBar">
+      <h2 id="levelText">Level 1 / 10</h2>
+    </div>
+
+    <div class="quizBox">
+
+      <h2 id="question">
+        Loading Question...
+      </h2>
+
+      <div id="answers">
+
+        <button class="answerBtn">Answer 1</button>
+        <button class="answerBtn">Answer 2</button>
+        <button class="answerBtn">Answer 3</button>
+        <button class="answerBtn">Answer 4</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- GAME OVER SCREEN -->
+  <div id="gameOverScreen" class="screen">
+
+    <h1>GAME OVER</h1>
+
+    <p>You reached Level <span id="finalLevel">1</span></p>
+
+    <button id="restartBtn">Play Again</button>
+
+  </div>
+
+
+  <!-- WIN SCREEN -->
+  <div id="winScreen" class="screen">
+
+    <h1>YOU WIN 🎉</h1>
+
+    <p>You completed all 10 levels!</p>
+
+    <button id="playAgainBtn">Play Again</button>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

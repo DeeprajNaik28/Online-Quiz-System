@@ -1,0 +1,162 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#0f0f0f;
+  color:white;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+/* ALL SCREENS */
+.screen{
+  display:none;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  max-width:700px;
+  padding:20px;
+  text-align:center;
+}
+
+.screen.active{
+  display:flex;
+}
+
+/* START SCREEN */
+#startScreen h1{
+  font-size:70px;
+  margin-bottom:20px;
+  color:#00ffd5;
+  text-shadow:0 0 20px #00ffd5;
+}
+
+#startScreen p{
+  font-size:22px;
+  margin-bottom:40px;
+  color:#ccc;
+}
+
+/* TOP BAR */
+.topBar{
+  width:100%;
+  margin-bottom:30px;
+}
+
+#levelText{
+  font-size:28px;
+  color:#00ffd5;
+  text-shadow:0 0 10px #00ffd5;
+}
+
+/* QUIZ BOX */
+.quizBox{
+  width:100%;
+  background:#1b1b1b;
+  border:2px solid #00ffd5;
+  border-radius:25px;
+  padding:40px 30px;
+  box-shadow:0 0 30px rgba(0,255,213,0.3);
+}
+
+/* QUESTION */
+#question{
+  font-size:32px;
+  line-height:1.5;
+  margin-bottom:40px;
+}
+
+/* ANSWERS */
+#answers{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.answerBtn,
+#startBtn,
+#restartBtn,
+#playAgainBtn{
+  padding:18px;
+  border:none;
+  border-radius:15px;
+  background:#00ffd5;
+  color:black;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.answerBtn:hover,
+#startBtn:hover,
+#restartBtn:hover,
+#playAgainBtn:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px #00ffd5;
+}
+
+/* GAME OVER */
+#gameOverScreen h1{
+  font-size:70px;
+  color:#ff4d4d;
+  margin-bottom:20px;
+  text-shadow:0 0 20px #ff4d4d;
+}
+
+#gameOverScreen p{
+  font-size:26px;
+  margin-bottom:40px;
+}
+
+/* WIN SCREEN */
+#winScreen h1{
+  font-size:70px;
+  color:#00ff88;
+  margin-bottom:20px;
+  text-shadow:0 0 20px #00ff88;
+}
+
+#winScreen p{
+  font-size:26px;
+  margin-bottom:40px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+  #startScreen h1,
+  #gameOverScreen h1,
+  #winScreen h1{
+    font-size:48px;
+  }
+
+  #question{
+    font-size:24px;
+  }
+
+  #answers{
+    grid-template-columns:1fr;
+  }
+
+  .answerBtn,
+  #startBtn,
+  #restartBtn,
+  #playAgainBtn{
+    font-size:18px;
+    padding:16px;
+  }
+
+  .quizBox{
+    padding:30px 20px;
+  }
+
+}
