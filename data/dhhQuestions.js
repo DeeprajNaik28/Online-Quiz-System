@@ -207,7 +207,7 @@ export const dhhQuestions = [
 },
 
 {
-  question: "What is Calm's role in Seedhe Maut?",
+  question: "What is Calm's first major role in Seedhe Maut?",
   options: ["Rapper", "Producer", "DJ", "Manager"],
   answer: "Rapper"
 },
