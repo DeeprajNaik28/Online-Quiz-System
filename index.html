@@ -12,9 +12,41 @@
   <!-- START SCREEN -->
   <div id="startScreen" class="screen active">
     <h1>QUIZ MASTER</h1>
+
     <p>Can you beat all 10 levels?</p>
 
     <button id="startBtn">Start Game</button>
+  </div>
+
+
+  <!-- QUIZ TYPE SCREEN -->
+  <div id="modeScreen" class="screen">
+
+    <h1>Select Quiz Type</h1>
+
+    <button class="modeBtn" data-mode="science">
+      🔬 Science Quiz
+    </button>
+
+    <button class="modeBtn" data-mode="dhh">
+      🎤 Indian Hip Hop Quiz
+    </button>
+
+    <!-- Future Modes -->
+    <!--
+    <button class="modeBtn" data-mode="india">
+      🇮🇳 Indian GK Quiz
+    </button>
+
+    <button class="modeBtn" data-mode="bollywood">
+      🎬 Bollywood Quiz
+    </button>
+    -->
+
+    <button id="backBtn">
+      ← Back
+    </button>
+
   </div>
 
 
@@ -50,9 +82,14 @@
 
     <h1>GAME OVER</h1>
 
-    <p>You reached Level <span id="finalLevel">1</span></p>
+    <p>
+      You reached Level
+      <span id="finalLevel">1</span>
+    </p>
 
-    <button id="restartBtn">Play Again</button>
+    <button id="restartBtn">
+      Play Again
+    </button>
 
   </div>
 
@@ -64,12 +101,14 @@
 
     <p>You completed all 10 levels!</p>
 
-    <button id="playAgainBtn">Play Again</button>
+    <button id="playAgainBtn">
+      Play Again
+    </button>
 
   </div>
 
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 
 </body>
 </html>

@@ -45,6 +45,61 @@ body{
   color:#ccc;
 }
 
+/* MODE SCREEN */
+#modeScreen h1{
+  font-size:55px;
+  margin-bottom:35px;
+  color:#00ffd5;
+  text-shadow:0 0 20px #00ffd5;
+}
+
+.modeBtn{
+  width:320px;
+  margin:10px 0;
+  padding:18px;
+
+  border:none;
+  border-radius:15px;
+
+  background:#00ffd5;
+  color:black;
+
+  font-size:20px;
+  font-weight:bold;
+
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.modeBtn:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px #00ffd5;
+}
+
+#backBtn{
+  width:320px;
+  margin-top:25px;
+  padding:15px;
+
+  border:2px solid #00ffd5;
+  border-radius:15px;
+
+  background:transparent;
+  color:#00ffd5;
+
+  font-size:18px;
+  font-weight:bold;
+
+  cursor:pointer;
+  transition:0.3s;
+}
+
+#backBtn:hover{
+  background:#00ffd5;
+  color:black;
+  box-shadow:0 0 20px #00ffd5;
+}
+
 /* TOP BAR */
 .topBar{
   width:100%;
@@ -135,8 +190,9 @@ body{
 
   #startScreen h1,
   #gameOverScreen h1,
-  #winScreen h1{
-    font-size:48px;
+  #winScreen h1,
+  #modeScreen h1{
+    font-size:42px;
   }
 
   #question{
@@ -150,7 +206,10 @@ body{
   .answerBtn,
   #startBtn,
   #restartBtn,
-  #playAgainBtn{
+  #playAgainBtn,
+  .modeBtn,
+  #backBtn{
+    width:100%;
     font-size:18px;
     padding:16px;
   }
@@ -158,5 +217,4 @@ body{
   .quizBox{
     padding:30px 20px;
   }
-
 }
