@@ -1,4 +1,4 @@
-const dhhQuestions = [
+export const dhhQuestions = [
 
 {
   question: "What does DHH stand for?",
@@ -149,11 +149,6 @@ const dhhQuestions = [
   answer: "MC Stan"
 },
 
-{
-  question: "Which rapper released the track 'Afsanay' with Young Stunners?",
-  options: ["Talha Anjum", "KR$NA", "Raftaar", "King"],
-  answer: "Talha Anjum"
-}
 
 {
   question: "Which producer is most closely associated with Young Stunners?",
@@ -161,11 +156,7 @@ const dhhQuestions = [
   answer: "Umair"
 },
 
-{
-  question: "Who released the song 'Touch Base'?",
-  options: ["KR$NA", "Raftaar", "Badshah", "King"],
-  answer: "KR$NA"
-},
+
 
 {
   question: "Which rapper released 'Untitled'?",
@@ -227,17 +218,7 @@ const dhhQuestions = [
   answer: "KR$NA"
 },
 
-{
-  question: "Which artist released the song 'Mazaak'?",
-  options: ["Seedhe Maut", "King", "Raftaar", "Badshah"],
-  answer: "Seedhe Maut"
-},
 
-{
-  question: "Who released the song 'Gumaan'?",
-  options: ["Young Stunners", "Seedhe Maut", "KR$NA", "DIVINE"],
-  answer: "Young Stunners"
-},
 
 {
   question: "Which rapper released 'Downers At Dusk'?",
@@ -275,11 +256,6 @@ const dhhQuestions = [
   answer: "MC Stan"
 },
 
-{
-  question: "Who released the song 'Street Lori'?",
-  options: ["DIVINE", "MC Stan", "King", "Raftaar"],
-  answer: "DIVINE"
-},
 
 {
   question: "Which artist released 'Class-Sikh Maut Vol. II'?",
@@ -287,11 +263,6 @@ const dhhQuestions = [
   answer: "Seedhe Maut"
 },
 
-{
-  question: "Which rapper released 'No Losses'?",
-  options: ["KR$NA", "Raftaar", "King", "Badshah"],
-  answer: "KR$NA"
-},
 
 
 {
@@ -318,11 +289,6 @@ const dhhQuestions = [
   answer: "KR$NA"
 },
 
-{
-  question: "Who released the song 'OG'?",
-  options: ["KR$NA", "Talha Anjum", "King", "MC Stan"],
-  answer: "Talha Anjum"
-},
 
 {
   question: "Which rapper released 'Living Legend'?",
@@ -342,11 +308,6 @@ const dhhQuestions = [
   answer: "Talha Anjum"
 },
 
-{
-  question: "Which rapper released the track 'Legacy vs Clout'?",
-  options: ["KR$NA", "Raftaar", "Badshah", "King"],
-  answer: "KR$NA"
-},
 
 {
   question: "Who released the song 'Haath Varthi'?",
@@ -405,11 +366,6 @@ const dhhQuestions = [
   answer: "KR$NA"
 },
 
-{
-  question: "Who released 'Nanchaku' along with Seedhe Maut?",
-  options: ["MC Stan", "KR$NA", "King", "Raftaar"],
-  answer: "MC Stan"
-},
 
 
 {
@@ -481,8 +437,6 @@ const dhhQuestions = [
   answer: "KR$NA"
 },
 
-
-
 {
   question: "Which artist released 'Ek Tha Raja'?",
   options: ["Badshah", "King", "Raftaar", "DIVINE"],
@@ -509,11 +463,5 @@ const dhhQuestions = [
   answer: "KR$NA"
 },
 
-
-{
-  question: "Which artist released 'Downers At Dusk'?",
-  options: ["Talha Anjum", "Talhah Yunus", "Jokhay", "Umair"],
-  answer: "Talha Anjum"
-}
 
 ];
